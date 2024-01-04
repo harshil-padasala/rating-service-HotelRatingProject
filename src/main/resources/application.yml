@@ -3,7 +3,7 @@ spring:
     name: RATING-SERVICE
   data:
     mongodb:
-      uri: mongodb://localhost:27017
+      uri: mongodb+srv://mongodb:YbVW2z2MHaByLfvj@spring-boot.udvszal.mongodb.net/?retryWrites=true&w=majority
       database: microservices
 server:
   port: 8083

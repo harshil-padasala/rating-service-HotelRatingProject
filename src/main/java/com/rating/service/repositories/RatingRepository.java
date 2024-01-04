@@ -14,4 +14,6 @@ public interface RatingRepository extends MongoRepository<Rating, String> {
 
     // get all ratings by hotelId
     List<Rating> findRatingsByHotelId(String hotelId);
+
+    void deleteRatingByUserId(String userID);
 }

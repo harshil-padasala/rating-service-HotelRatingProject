@@ -20,4 +20,6 @@ public interface RatingService {
 
     // delete rating by ratingId
     Rating deleteRatingById(String ratingId);
+
+    void deleteRatingByUserId(String userId);
 }

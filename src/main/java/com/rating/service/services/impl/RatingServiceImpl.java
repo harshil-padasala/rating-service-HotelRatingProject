@@ -41,4 +41,11 @@ public class RatingServiceImpl implements RatingService {
 
         return rating;
     }
+
+    @Override
+    public void deleteRatingByUserId(String userId) {
+        ratingRepository.deleteRatingByUserId(userId);
+    }
+
+
 }

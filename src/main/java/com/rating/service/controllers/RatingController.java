@@ -46,4 +46,11 @@ public class RatingController {
     public ResponseEntity<Rating> deleteByRatingId(@PathVariable String ratingId) {
         return ResponseEntity.ok(ratingService.deleteRatingById(ratingId));
     }
+
+    // Deleting ratings by UserId
+    @DeleteMapping("/user-id/{user-id}")
+    public ResponseEntity<Object> deleteRatingByUserId(@PathVariable("user-id") String userId) {
+        ratingService.deleteRatingByUserId(userId);
+        return ResponseEntity.ok(HttpStatus.OK);
+    }
 }
